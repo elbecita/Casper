@@ -1,9 +1,87 @@
+:root {
+  --darkgrey: #0D1F2D; /* dark gunmetal */
+  --pink: #FFB8D1; /* cotton candy */
+  --green: #9BFFF0; /* waterspout */
+  --light-purple: #BC9EC1; /* pastel purple */
+  --light-pink: #FBD5DF; /* pale pink */
+}
+
+/* Make logos circular*/
 .site-logo-large {
-    max-width: 13rem;
+  max-width: 13rem;
 }
+
 .site-logo-large img {
-    width: 13rem;
-    height: auto;
-    border-radius: 50%;
-    border: 3px solid rgb(255, 255, 255);
+  width: 13rem;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid var(--pink);
 }
+
+.site-nav-logo img {
+  width: 2.9rem;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid var(--pink);
+}
+
+/* Apply colors */
+.site-header {
+  background-color: var(--darkgrey);
+}
+
+.site-footer {
+  background-color: var(--darkgrey);
+}
+
+.read-next-card {
+  background-color: var(--pink);
+}
+
+/*
+.nav li a, .social-link {
+  color: var(--pink);
+}
+*/
+
+
+/* No author in post card so reading-time has no margin */
+.reading-time {
+  margin-left: 0;
+}
+
+/* font awesome icons behave weirdly when inside a link tag and they show underline on hover */
+.social-link:hover {
+  text-decoration: none;
+}
+
+/* No latest posts so no margin needed */
+.site-footer-nav a {
+  margin-left: 0;
+}
+
+.no-posts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: var(--darkgrey);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .no-posts {
+    font-size: 20px;
+  }
+}
+
+.no-posts-text {
+  margin-top: 10px;
+}
+
+

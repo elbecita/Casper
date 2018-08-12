@@ -1,8 +1,8 @@
 /* Variables
 /* ---------------------------------------------------------- */
 
+/* Original colors
 :root {
-    /* Colours */
     --blue: #3eb0ef;
     --green: #a4d037;
     --purple: #ad26b4;
@@ -15,6 +15,11 @@
     --pink: #fa3a57;
     --brown: #a3821a;
 }
+/* ---------------------------------------------------------- */
+
+/* Import custom colors
+/* ---------------------------------------------------------- */
+@import "colors.css";
 
 /* Reset
 /* ---------------------------------------------------------- */
@@ -297,7 +302,7 @@ body {
 
 ::selection {
     text-shadow: none;
-    background: color(var(--blue) lightness(+30%));
+    background: color(var(--pink) lightness(+30%));
 }
 
 hr {
@@ -415,7 +420,7 @@ blockquote cite a {
 }
 
 a {
-    color: color(var(--blue) l(-5%));
+    color: color(var(--pink) l(-5%));
     text-decoration: none;
 }
 
