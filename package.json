@@ -10,7 +10,8 @@
       "zip": "gulp zip"
     },
     "author": {
-        "name": "Maria Fernandez"
+        "name": "Maria Fernandez",
+        "email": "mariafehe@gmail.com"
     },
     "keywords": [
         "ghost",
